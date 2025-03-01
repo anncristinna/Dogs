@@ -11,15 +11,17 @@ import ProtectedRoute from './Components/Helper/ProtectedRoute.jsx';
 
 const App = () => {
   return (
-    <div>
+    <div className='App'>
       <BrowserRouter>
         <UserStorage>
           <Header />
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='login/*' element={<Login />} />
-            <Route path='conta/*' element={<ProtectedRoute> <User /> </ProtectedRoute>}/>
-          </Routes>
+          <main className='AppBody'>
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='login/*' element={<Login />} />
+              <Route path='conta/*' element={<ProtectedRoute> <User /> </ProtectedRoute>} />
+            </Routes>
+          </main>
           <Footer />
         </UserStorage>
       </BrowserRouter>
