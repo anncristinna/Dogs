@@ -13,7 +13,7 @@ const Header = () => {
                 <Link to="/" aria-label='Dogs - Home' className={styles.logo}>
                     <Dogs />
                 </Link>
-                {data ? (<Link to="/conta">{data.nome} <button onClick={userLogout}>Sair</button></Link>) : (<Link to="/login" className={styles.login}>Login / Criar</Link>)}
+                {data ? (<Link to="/conta">{data.nome} </Link>) : (<Link to="/login" className={styles.login}>Login / Criar</Link>)}
                 
             </nav>
         </header>

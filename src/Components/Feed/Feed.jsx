@@ -1,11 +1,12 @@
 import React from 'react'
 
-const Heaed = () => {
+const Feed = () => {
   return (
     <div>
+      feed 
       
     </div>
   )
 }
 
-export default Heaed
+export default Feed

@@ -17,8 +17,7 @@ export const UserStorage = (props) => {
     setLoading(false)
     setLogin(false)
     window.localStorage.removeItem('token')
-    navigate('/login')
-  }, [navigate])
+  }, [])
 
   React.useEffect(() => {
     async function autoLogin() {
