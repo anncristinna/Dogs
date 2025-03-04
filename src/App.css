@@ -89,3 +89,7 @@ a {
 .AppBody {
     flex: 1;
 }
+
+.mainContainer {
+    margin-top: 4rem;
+}
