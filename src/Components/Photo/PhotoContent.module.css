@@ -1,6 +1,6 @@
 .photo {
     margin: auto;
-    height: 36rem;
+    height: auto;
     border-radius: .2rem;
     display: grid;
     grid-template-columns: 36rem 20rem;

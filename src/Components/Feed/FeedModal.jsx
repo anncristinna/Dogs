@@ -19,8 +19,6 @@ const FeedModal = ({ photo, setModalPhoto }) => {
         if(event.currentTarget === event.target) {
             setModalPhoto(null)
         }
-        console.log('current', event.currentTarget)
-        console.log('target', event.target)
     }
 
     return (
