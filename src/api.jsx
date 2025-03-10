@@ -97,7 +97,7 @@ export function COMENT_POST(id, body) {
     }
 }
 
-export function PHOTO_DELETE(id, body) {
+export function PHOTO_DELETE(id) {
     return {
         url: `${API_URL}/api/photo/${id}`,
         options: {
@@ -105,6 +105,19 @@ export function PHOTO_DELETE(id, body) {
             headers: {
                 Authorization: 'Bearer ' + window.localStorage.getItem('token')
             }
+        }
+    }
+}
+
+export function PASSWORD_LOST(body) {
+    return {
+        url: API_URL + '/api/password/lost',
+        options: {
+            method: 'POST',
+            headers: {
+                'Content_Type': 'application/json'
+            },
+            body: JSON.stringify(body)
         }
     }
 }
